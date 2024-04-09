@@ -1,0 +1,256 @@
+.app {
+  
+    background:url(./Images/dark\ chatbot.jpg) no-repeat;
+    background-size: 100% 800px;
+    height: 715px;
+}
+.app > .screen {
+    display: none;
+}
+
+
+img.app-icons {
+    position: absolute;
+    left: 30px;
+    width: 5%;
+}
+.app-Title {
+    text-align: center;
+    padding: 12px 30px;
+    font-size: 72px;
+    font-weight: 600;
+    /* background: black; */
+    color: white;
+    background: -webkit-linear-gradient(#51baff, #e42999);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+span.chat.title-text {
+    top: 94px;
+    left: 82%;
+    position: absolute;
+    background: -webkit-linear-gradient(#51baff, #e42999);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.app > .screen.active{
+ /* width: 100%;
+ height: 100%; */
+    display: block;
+}
+.screen .form {
+    position: absolute;
+    top: 45%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 400px;
+}
+.screen .form-input {
+    width: 100%;
+    margin: 20px 0px;
+}
+.screen h2 {
+margin-bottom: 25x;
+font-size: 60px;
+color: white;
+border-bottom: 4px solid #555;
+padding: 5px 0px;
+display: inline-block;
+}
+.screen .form-input label {
+    margin-bottom: 20px;
+    color: white;
+    font-size: x-large;
+    display: block;
+    margin-bottom: 15px;
+    font-weight: 800;
+}
+.screen .form-input input {
+    width: 100%;
+    background: black;
+    color: white;
+    border-radius: 12px;
+    padding: 10px;
+    border: 2px solid #51baff;
+    font-size: 16px;
+}
+.screen .form-input button {
+    padding: 7px 27px;
+    background: green;
+    color: #eee;
+    font-size: 20px;
+    font-weight: 800;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+}
+.screen .form-input button:hover {
+  
+   
+    color: black;
+    
+}
+.messages {
+    overflow-y: scroll; /* Add vertical scrollbar */
+    max-height: 400px; /* Limit maximum height to 300px */
+  }
+  
+  
+.screen.chat-screen.active {
+    width: 50%;
+    left: 25%;
+    display: block;
+    position: absolute;
+}
+.chat-screen .header {
+    border-radius: 10px;
+    background: #111;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+    width: 93%;
+}
+.chat-screen .header .logo{
+ font-size:40px;
+ color: #eee;
+ font-weight: 600;   
+}
+.chat-screen .header button {
+    padding: 8px 20px;
+    /* border: none; */
+    border-radius: 15px;
+    background: rgb(195, 24, 24);
+    color: #eee;
+    font-size: 16px;
+    font-weight: 800;
+    cursor: pointer;
+    outline: none;
+}
+.chat-screen .header button:hover{
+    background:darkred;
+}
+.chat-screen .messages {
+    border-radius: 18px;
+    background: url(./Images/cartoon-dark-black.jpg) no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: calc(100% - 100px);
+    overflow: auto;
+}
+.chat-screen .messages .message {
+    display: flex;
+    padding: 10px;
+
+    background-size: 100%;
+}
+.chat-screen .messages .message > div {
+    /* max-width: 80%; */
+    height: 40px;
+    background: rgb(247, 247, 247);
+    box-sizing: 0px 0px 20px 5px rgba(0,0,0,0.05) ;
+    padding: 10px;
+}
+.chat-screen .messages .message .my-message{
+    justify-content: flex-end;
+    background: #111;
+}
+.chat-screen .messages .message .other-message {
+    justify-content: flex-start;
+}
+
+.messages.my-message {
+    text-align: end;
+}
+.my-message.text {
+    display: inline-block;
+    background: white;
+    
+}
+.other-message.text {
+    display: inline-block;
+    background: white;
+}
+/* .app {
+    width: 290px;
+    height: 283px;
+} */
+.chat-screen .messages .message .name{
+    font-size: 13px;
+    color: #555;
+    margin-bottom: 5px;
+}
+.chat-screen .messages .message .text{
+   word-wrap: break-word;
+
+}
+.chat-screen .messages .update {
+    background: #35353566;
+    text-align: center;
+    padding: 10px;
+    font-style: italic;
+    color: white;
+}
+.chat-screen .typebox {
+width: 100%;
+height: 50px;
+display: flex;
+}
+
+.chat-screen .typebox input {
+    flex: 1;
+    /* height: 50px; */
+    font-size: 17px;
+    border-radius: 18px;
+}
+.chat-screen .typebox button {
+    width: 80px;
+    height: 100%;
+    background: green;
+    color: #eee;
+    font-size: 16px;
+    border-radius: 15px;
+    font-weight: bolder;
+    outline: none;
+    margin-left: 8px;
+    border: none;
+    cursor: pointer;
+}
+.chat-screen .typebox button:hover{
+background: darkgreen;
+}
+.message.other-message {
+    justify-content: end;
+}
+img.MW.logo {
+    position: absolute;
+    width: 30%;
+    top: 75px;
+}
+.messages {
+    padding-bottom: 80px; /* Adjust the value as needed */
+  }
+  
+  @media only screen and (min-width: 1708px) {
+    .chat-screen .messages {
+        border-radius: 18px;
+        background: url(./Images/cartoon-dark-black.jpg) no-repeat;
+        background-size: 100% 100%;
+        width: 94%;
+        height: calc(100% - 100px);
+        overflow: auto;
+    }
+    .chat-screen .typebox {
+        width: 94%;
+        height: 50px;
+        display: flex;
+    }
+    .chat-screen .header{
+        width: 90%;
+    }
+  }
+  

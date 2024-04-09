@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ChatApp</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app">
+    <div class="app-Title"> 𝐌𝐞𝐞𝐭𝐖𝐄!</span>
+      <img class="app-icons" src="./Images/app-icons.png"/>
+    </div>
+
+      <div class="screen join-screen  active">
+        <div class="form">
+          <h2>Welcome To<!---<span class="chat title-text">𝐌𝐖!</span> --></h2>
+          <img class="MW logo" src="./Images/MW_letter.png"/>
+          <div class="form-input">
+            <label for="username">User Name</label>
+            <input type="text" id="username" placeholder="Enter your username">
+
+          </div>
+          <div class="form-input">
+            <button id="join-user">Join</button>
+          </div>
+        </div>
+      </div>
+      <div class="screen chat-screen ">
+        <div class="header">
+          <div class="logo">Chat Room</div>
+          <button id="exit-chat">Exit</button>
+        </div>
+        <div class="messages">
+          <!-- Messages will be displayed here -->
+        </div>
+        <div class="typebox">
+          <input type="text" id="message-input" placeholder="Enter your message">
+
+          <button id="send-message">Send</button>
+        </div>
+      </div>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.min.js"></script>
+
+    <script type="text/javascript" src="code.js"></script>
+  </body>
+</html>
